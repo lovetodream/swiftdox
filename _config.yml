@@ -29,7 +29,8 @@ twitter_username: timoxdev
 github_username: timozacherl
 
 # Build settings
-theme: 'just-the-docs'
+# theme: 'just-the-docs' - local only
+remote_theme: pmarsceill/just-the-docs
 plugins:
 # Exclude from processing.
 # The following items will not be processed, by default.
