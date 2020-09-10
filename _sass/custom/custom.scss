@@ -5,7 +5,7 @@
  * Author: Timo Zacherl
  * 
  * -----
- * Last Modified: Thursday, 10th September 2020 9:21:19 pm
+ * Last Modified: Thursday, 10th September 2020 9:55:49 pm
  * Modified By: Timo Zacherl
  * -----
  * 
@@ -61,6 +61,7 @@ pre.highlight {
   }
 
   .runtime-preview {
+    z-index: 999;
     position: absolute;
     top: 0;
     right: 0;
