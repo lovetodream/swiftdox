@@ -1,0 +1,166 @@
+/*
+ * File: custom.scss
+ * Project: custom
+ * File Created: Tuesday, 8th September 2020 8:25:45 pm
+ * Author: Timo Zacherl
+ * 
+ * -----
+ * Last Modified: Thursday, 10th September 2020 5:48:01 pm
+ * Modified By: Timo Zacherl
+ * -----
+ * 
+ * Copyright © 2020 Timo Zacherl. All rights reserved.
+ */
+
+$body-font-family: 'SF Mono', -apple-system, BlinkMacSystemFont,
+  'helvetica neue', helvetica, roboto, noto, 'segoe ui', arial, sans-serif;
+
+.code-preview-container {
+  position: relative;
+  display: grid;
+  flex: none;
+  height: auto;
+  background-color: #fafafa;
+  transition: margin 0.1s ease-in-out;
+  margin-top: 1em;
+}
+
+pre.highlight {
+  background-color: #fafafa;
+  font-size: 20px;
+  line-height-step: 1.85;
+  letter-spacing: -0.01em;
+
+  code {
+    background-color: #fafafa;
+  }
+}
+
+.code-preview {
+  .filename {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    box-shadow: 9px 9px 20px 2px rgba(0, 0, 0, 0.05);
+    border-bottom-right-radius: 9px;
+
+    .file-icon {
+      position: relative;
+      top: 5px;
+      height: 24px;
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  .runtime-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f2f2f2;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    margin: 1em;
+    margin-left: 0;
+    width: 278px;
+    height: 630px;
+    transition: width 0.2s cubic-bezier(0.25, 0.1, 0.25, 0.1),
+      height 0.2s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+
+    .preview-show {
+      display: none;
+    }
+
+    &.collapsed {
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+      width: 90px;
+      height: 28px;
+
+      > .runtime-preview-asset {
+        display: none;
+      }
+
+      > .header {
+        border-radius: 6px;
+
+        > .preview-show {
+          display: block;
+        }
+
+        > .preview-hide {
+          display: none;
+        }
+      }
+    }
+
+    .header {
+      font-size: 12px;
+      line-height: 1.33;
+      letter-spacing: -0.01em;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: stretch;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 0.5em;
+      border-radius: 6px 6px 0 0;
+      z-index: 1;
+      background: #f2f2f2;
+      color: #666;
+
+      border: 0;
+      box-sizing: content-box;
+      overflow: visible;
+
+      .preview-hide {
+        margin-top: 2px;
+      }
+
+      .preview-hide,
+      .preview-show {
+        font-size: 14px;
+        line-height: 14px;
+        white-space: nowrap;
+        user-select: none;
+      }
+    }
+
+    .runtime-preview-asset {
+      display: grid;
+      border-radius: 0 0 6px 6px;
+
+      .asset {
+        grid-row: 1;
+        grid-column: 1;
+
+        img {
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+h2 + p {
+  span {
+    display: flex;
+    justify-content: flex-end;
+    height: 0;
+    margin: 0;
+
+    & > .is-h2-label {
+      position: relative;
+      top: -32px;
+      height: 24px;
+    }
+  }
+}
