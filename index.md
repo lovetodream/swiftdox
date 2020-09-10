@@ -43,9 +43,10 @@ Any finantial support is highly appreciated.
 
 Thanks!
 
-<a href="https://www.patreon.com/timozacherl">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+<a class="sponsor-cta" href="https://www.patreon.com/timozacherl" style="margin-right: 10px;">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160" style="border-radius: 4px;">
 </a>
+<a class="sponser-cta" href="https://www.buymeacoffee.com/timox" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-black.png" alt="Buy Me A Coffee" style="height: 37.6px !important;width: auto !important; border-radius: 4px;" ></a>
 
 ---
 
