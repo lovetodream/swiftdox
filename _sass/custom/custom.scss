@@ -5,13 +5,15 @@
  * Author: Timo Zacherl
  * 
  * -----
- * Last Modified: Thursday, 10th September 2020 5:48:01 pm
+ * Last Modified: Thursday, 10th September 2020 8:56:10 pm
  * Modified By: Timo Zacherl
  * -----
  * 
  * Copyright © 2020 Timo Zacherl. All rights reserved.
  */
 
+$link-color: $yellow-000;
+$btn-primary-color: $yellow-100;
 $body-font-family: 'SF Mono', -apple-system, BlinkMacSystemFont,
   'helvetica neue', helvetica, roboto, noto, 'segoe ui', arial, sans-serif;
 
@@ -163,4 +165,12 @@ h2 + p {
       height: 24px;
     }
   }
+}
+
+mark {
+  background-color: rgba(255, 255, 0, 0.35);
+}
+
+footer.site-footer {
+  font-size: 10px !important;
 }
