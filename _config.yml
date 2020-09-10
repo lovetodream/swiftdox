@@ -20,9 +20,9 @@
 
 title: SwiftDox
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this line in
-  _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  SwiftUI is a new Cross Platform UI Framework introduced in WWDC2019.  
+  This page should represent a basic documentation of the different SwiftUI
+  components with examples.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://swiftdox.dev' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: timoxdev
