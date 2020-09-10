@@ -39,7 +39,7 @@ Later in the future I may add even more stuff related to Swift and SwiftUI, so s
 Give a ⭐️ on GitHub if this documentations helped you!  
 And have a look at my other Open Source Projects on GitHub.
 
-Any finantial support is highly appreciated.
+Any financial support is highly appreciated.
 
 Thanks!
 
