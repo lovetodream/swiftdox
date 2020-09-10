@@ -5,7 +5,7 @@
  * Author: Timo Zacherl
  *
  * -----
- * Last Modified: Thursday, 10th September 2020 5:54:30 pm
+ * Last Modified: Thursday, 10th September 2020 8:20:36 pm
  * Modified By: Timo Zacherl
  * -----
  *
@@ -18,4 +18,7 @@ window.addEventListener('load', () => {
       el.classList.toggle('collapsed');
     });
   });
+
+  const footer = document.querySelector('footer.site-footer');
+  footer.innerHTML = `This site is maintained by <a href="https://timozacherl.com">Timo Zacherl</a> and other contributors. Source Code available on <a href="https://github.com/TimoZacherl/swiftdox">GitHub</a> and licensed under the <a href="https://github.com/timozacherl/swiftdox/tree/master/LICENSE">MIT License</a>. It uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>.`;
 });
