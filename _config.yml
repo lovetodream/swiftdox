@@ -65,7 +65,7 @@ back_to_top_text: 'Back to top'
 
 footer_content:
   'Copyright &copy; 2020 Timo Zacherl. Distributed by an <a
-  href="https://github.com/timozacherl/swiftdox/tree/master/LICENSE.txt">MIT
+  href="https://github.com/timozacherl/swiftdox/tree/master/LICENSE">MIT
   license.</a>'
 
 # Footer last edited timestamp
