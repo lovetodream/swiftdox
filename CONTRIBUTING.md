@@ -56,7 +56,7 @@ This is basically just copy and paste. You should add a few more lines to the im
       <div class="runtime-preview-asset">
         <div class="asset">
           <picture>
-            <img alt="A screenshot from the Xcode preview as it would appear on iPhone. <<ADD MORE HERE>>" srcset="<<IMAGE PATH>> 1x" src="<<IMAGE PATH>>" width="834" height="auto">
+            <img alt="A screenshot from the Xcode preview as it would appear on iPhone. --ADD MORE HERE--" srcset="--IMAGE PATH-- 1x" src="--IMAGE PATH--" width="834" height="auto">
           </picture>
         </div>
       </div>
@@ -65,4 +65,5 @@ This is basically just copy and paste. You should add a few more lines to the im
 </div>
 
 Add the swift markdown code block here...
+{: .full-app-example-code}
 ```
