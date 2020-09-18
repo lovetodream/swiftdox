@@ -30,6 +30,97 @@ If you want to create Text, just create it with `Text("SwiftUI")`. With chained 
 Text("SwiftUI is so cool")
 ```
 
+### Styling
+
+Styling the View works as follow...
+```swift
+Text("Hello World")
+    .someModifier() // styling works through piped functions
+```
+
+#### Text color
+```swift
+.foregroundColor(Color?) // eg. .red
+```
+<details>
+<summary>Preview</summary>
+<span style="color: red;">Hello World</span>
+</details>
+
+#### Bold font weight
+```swift
+.bold()
+```
+<details>
+<summary>Preview</summary>
+<b>Hello World</b>
+</details>
+
+#### Italics
+```swift
+.italic()
+```
+<details>
+<summary>Preview</summary>
+<i>Hello World</i>
+</details>
+
+#### Strike through text
+```swift
+.strikethrough(Bool, color: Color?) // bool: active/inactive
+```
+<details>
+<summary>Preview</summary>
+<s>Hello World</s>
+</details>
+
+#### Underline text
+```swift
+.underline(Bool, color: Color?) // bool: active/inactive
+```
+<details>
+<summary>Preview</summary>
+<u>Hello World</u>
+</details>
+
+#### Spacing/Kerning
+```swift
+.kerning(CGFloat) // eg. 1.5
+```
+<details>
+<summary>Preview</summary>
+<span style="letter-spacing: 1.5px;">Hello World</span>
+</details>
+
+#### Tracking
+The effect of tracking resembles that of the `.kerning()` modifier, but adds or removes trailing whitespace, rather than changing character offsets. Also, using any nonzero amount of tracking disables nonessential ligatures, whereas kerning attempts to maintain ligatures.
+```swift
+.tracking(CGFloat) // eg. 1.5
+```
+<details>
+<summary>Preview</summary>
+<span style="letter-spacing: 1.5px;">Hello World</span>
+</details>
+
+#### Vertical Baseline Offset
+Sets the vertical offset for the text relative to its baseline.
+```swift
+.baselineOffset(CGFloat) // eg. 1.5
+```
+No Preview available
+{: .no-preview}
+
+#### Text Transformation
+Transforms the text in either lowercase `.lowercase` or uppercase `.uppercase` through an `enum`
+```swift
+.textCase(Case?) // eg. .uppercase
+```
+<details>
+<summary>Preview</summary>
+<span style="text-transform: uppercase;">Hello World</span>
+</details>
+
+
 ## Example
 
 ```swift
@@ -41,7 +132,7 @@ Text("SwiftUI is awesome")
 ---
 
 ## Full app example 
-<span><span class="label is-h2-label">SwiftUI 2.0 or newer</span><span>
+<span><span class="label is-h2-label">SwiftUI 2.0 or newer</span></span>
 
 <div class="code-preview-container">
   <div class="code-preview">
@@ -79,6 +170,7 @@ struct SwiftUIApp: App {
     }
 }
 ```
+{: .full-app-example-code}
 
 ---
 
