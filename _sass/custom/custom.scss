@@ -5,7 +5,7 @@
  * Author: Timo Zacherl
  * 
  * -----
- * Last Modified: Thursday, 10th September 2020 9:55:49 pm
+ * Last Modified: Friday, 18th September 2020 10:30:28 pm
  * Modified By: Timo Zacherl
  * -----
  * 
@@ -27,13 +27,17 @@ $body-font-family: 'SF Mono', -apple-system, BlinkMacSystemFont,
   margin-top: 1em;
 }
 
-pre.highlight {
+pre.highlight,
+div.highlight,
+div.highlighter-rouge {
   background-color: #fafafa;
   font-size: 20px;
   line-height-step: 1.85;
   letter-spacing: -0.01em;
 
-  code {
+  code,
+  pre,
+  .highlight {
     background-color: #fafafa;
   }
 }
@@ -49,7 +53,7 @@ pre.highlight {
     padding-bottom: 0.5em;
     padding-right: 1em;
     box-shadow: 9px 9px 20px 2px rgba(0, 0, 0, 0.05);
-    border-bottom-right-radius: 9px;
+    // border-bottom-right-radius: 9px;
 
     .file-icon {
       position: relative;
@@ -178,4 +182,58 @@ footer.site-footer {
 
 .sponsor-cta {
   text-decoration: none;
+}
+
+.full-app-example-code {
+  position: relative;
+  z-index: 2;
+}
+
+.language-swift + details,
+.language-swift + .no-preview {
+  margin-top: -1em;
+}
+
+.no-preview {
+  border: 3px solid #ebecf1;
+  padding: 0.5rem;
+  transition: 0.2s ease;
+  font-weight: bold;
+  cursor: not-allowed;
+
+  &:before {
+    content: '🚨';
+    padding-right: 10px;
+  }
+}
+
+details {
+  border: 3px solid #ebecf1;
+  padding: 0.5rem;
+  transition: 0.2s ease;
+
+  summary {
+    font-weight: bold;
+    transition: inherit;
+
+    &::before {
+      content: '✌️';
+      padding-right: 10px;
+    }
+  }
+
+  &[open] {
+    padding: 0.5rem;
+    background-color: #ebecf1; //#f7f2e7
+    summary {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px #7253ed solid;
+      box-shadow: 6px 8px 18px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+      &::before {
+        content: '🙌';
+      }
+    }
+  }
 }
